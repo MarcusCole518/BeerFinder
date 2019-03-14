@@ -1,0 +1,11 @@
+{
+  "name": "beerfinder",
+  "version": "1.0.0",
+  "description": "A simple SPA that recommends different beers based on input",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "export NODE_ENV=test && jasmine"
+  },
+  "author": "Marcus Little",
+  "license": "ISC"
+}
