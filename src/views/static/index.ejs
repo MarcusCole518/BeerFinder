@@ -6,60 +6,160 @@
 
         <title><%= title %></title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/css/application.css">
+        <link rel="stylesheet" href="/css/freelancer.css">
+        <link rel="stylesheet" href="/css/freelancer.min.css">
+
+        <title>BeerFinder</title>
+
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+        <link href="css/freelancer.min.css" rel="stylesheet">
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#">BeerFinder</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><ion-icon name="beer"></ion-icon></a>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Profile</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Log Out</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">About</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <main class="container">
-            <header class="jumbotron my-4">
-                <h1 class="display-3">Welcome to BeerFinder</h1>
-                <p class="lead">Discover Your Next Favorite Beer.</p>
-                <a href="#" class="btn btn-primary btn-lg">Sign up</a>
-            </header>
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container">
+                <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
+                <h1 class="text-uppercase mb-0">Beerfinder</h1>
+                <br/><h2 class="font-weight-light mb-0">Find Your Next Favorite Beer</h2>
+            </div>
+        </header>
 
-            <section class="row text-center">
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="text-center text-uppercase text-secondary mb-0">Taste Preferences</h2>
+            </div>
+        </section>
 
-                <section class="col-lg-4">
-                    <h4 class="card-title">Post</h4>
-                    <p class="card-text">Share your thoughts about subjects that are important to you.</p>
-                </section>
+        <div class="container">
+            <form>
+                <div class="form-group row">
+                    <label for="Hoppiness" class="col-sm-2 col-form-label">Hoppiness</label>
+                    <select class="md">
+                            <option value="1">Low</option>
+                            <option value="2">Medium</option>
+                            <option value="3">High</option>
+                    </select>
+                </div>
+                <div class="form-group row">
+                    <label for="Fruitiness" class="col-sm-2 col-form-label">Fruitiness</label>
+                    <select class="md">
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                    </select>
+                </div>
+                <div class="form-group row">
+                        <label for="Maltiness" class="col-sm-2 col-form-label">Level of Malt</label>
+                        <select class="md">
+                            <option value="1">Low</option>
+                            <option value="2">Medium</option>
+                            <option value="2">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                            <label for="ABV" class="col-sm-2 col-form-label">Strength (%)</label>
+                            <select class="md">
+                                <option value="1">4.0 - 4.9</option>
+                                <option value="2">5.0 - 5.9</option>
+                                <option value="3">6.0 - 6.9</option>
+                                <option value="3">7.0 - 7.9</option>
+                                <option value="3">8.0 - 8.9</option>
+                            </select>
+                    </div>
+                        <div class="form-group row">
+                                <label for="Color" class="col-sm-2 col-form-label">Color</label>
+                                <select class="md">
+                                    <option value="1">Light</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">Dark</option>
+                                </select>
+                            </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-                <section class="col-lg-4">
-                    <h4 class="card-title">Comment</h4>
-                    <p class="card-text">Your opinion counts! But you have to make yourself heard first!</p>
-                </section>
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Built With Node.js <ion-icon name="logo-nodejs" size="large"></ion-icon></h4>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Social</h4>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-social text-center" href="https://github.com/MarcusCole518" target="_blank">
+                                    <ion-icon name="logo-github" size="large"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-social text-center" href="https://www.linkedin.com/" target="_blank">
+                                    <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-social text-center" href="https://twitter.com/PonyBoy518">
+                                    <ion-icon name="logo-twitter" size="large"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="text-uppercase mb-4">Step 1</h4>
+                        <p class="lead mb-0">
+                            Input Taste Preferences
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-                <section class="col-lg-4">
-                    <h4 class="card-title">Stay Informed</h4>
-                    <p class="card-text">See the most active topics as well as trending subjects every day!</p>
-                </section>
-            </section>
-        </main>
+        <div class="copyright py-4 text-center text-white">
+            <div class="container">
+                <small>Copyright &copy; Marcus Little 2019</small>
+            </div>
+        </div>
 
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <script
-            src="http://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous">
-        </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/contact_me.js"></script>
+
+        <script src="js/freelancer.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
     </body>
 </html>
