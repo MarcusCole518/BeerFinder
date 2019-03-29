@@ -1,52 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <title><%= title %></title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/css/freelancer.css">
-        <link rel="stylesheet" href="/css/freelancer.min.css">
-
-        <title>BeerFinder</title>
-
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-        <link href="css/freelancer.min.css" rel="stylesheet">
-    </head>
+    <% include ./partials/head.ejs %>
 
     <body>
-        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><ion-icon name="beer"></ion-icon></a>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Profile</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Log Out</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+        <% include ./partials/navbar.ejs %>
         <header class="masthead bg-primary text-white text-center">
             <div class="container">
                 <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
                 <h1 class="text-uppercase mb-0">Beerfinder</h1>
                 <br/><h2 class="font-weight-light mb-0">Find Your Next Favorite Beer</h2>
             </div>
+            <a href="/users/sign_up" class="btn btn-primary btn-lg">Sign up</a>
         </header>
 
         <section class="portfolio" id="portfolio">

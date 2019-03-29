@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html>
-<% include ../static/partials/head.ejs %>
+    <% include ../static/partials/head.ejs %>
 
     <body>
         <% include ../static/partials/navbar.ejs %>
-        <form class="form-horizontal" action='/users' method="POST">
+        <form class="form-horizontal" action='/users/sign_in' method="POST">
             <fieldset>
                 <div id="legend">
-                    <legend class="">Welcome to BeerFinder</legend>
+                    <legend class="">Sign in</legend>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="email">E-mail</label>
                     <div class="controls">
                         <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-                        <p class="help-block">Please provide your E-mail</p>
+                        <p class="help-block">Welcome Back! Please enter your email address</p>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="password">Password</label>
                     <div class="controls">
                         <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-                        <p class="help-block">Password should be at least 4 characters</p>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <label class="control-label"  for="password_confirm">Password (Confirm)</label>
-                    <div class="controls">
-                        <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
-                        <p class="help-block">Please confirm password</p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                        <button type="submit" class="btn btn-success">Sign up</button>
+                        <button type="submit" class="btn btn-success">Sign in</button>
                     </div>
                 </div>
             </fieldset>
