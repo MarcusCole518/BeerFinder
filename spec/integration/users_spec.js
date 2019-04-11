@@ -76,5 +76,5 @@ describe('routes: users', () => {
                 done();
             });
         });
-    })
+    });
 });

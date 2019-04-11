@@ -1,3 +1,2 @@
 /node_modules
 +.env
-+/startbootstrap-freelancer-gh-pages/vendor/jquery
